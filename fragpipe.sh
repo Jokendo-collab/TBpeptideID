@@ -39,7 +39,7 @@ $philosopherPath workspace --clean
 $philosopherPath workspace --init
 $philosopherPath database --annotate $fastaPath --prefix $decoyPrefix
 
-# Pick one from the following three commands and comment rest of two.
+# Pick one from the following three commands and comment rest of two..
 ##$philosopherPath peptideprophet --nonparam --expectscore --decoyprobs --ppm --accmass --decoy $decoyPrefix --database $fastaPath ./*.pepXML # For closed search
 $philosopherPath peptideprophet --nonparam --expectscore --decoyprobs --masswidth 1000.0 --clevel -2 --decoy $decoyPrefix --combine --database $fastaPath ./*.pepXML --freequant # For open search
 ##$philosopherPath peptideprophet --nonparam --expectscore --decoyprobs --ppm --accmass --nontt --decoy $decoyPrefix --database $fastaPath ./*.pepXML # For non-specific closed search
