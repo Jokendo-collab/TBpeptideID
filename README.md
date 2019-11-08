@@ -19,6 +19,7 @@ Integration of heterogeneous and voluminous data from proteomics, transcriptomic
 * Multi-level detailed reports including peptides, ions and proteins.
 
 ## Running fragpipe linux workflow
+```
 #!/bin/bash
 #SBATCH --account=cbio
 #SBATCH --partition=ada
@@ -29,7 +30,7 @@ Integration of heterogeneous and voluminous data from proteomics, transcriptomic
 #SBATCH --mail-type=END,FAIL
 
 set -xe
-
+```
 ### Specify paths of tools and files. Change them accordingly.
 ```
 dataDirPath="/scratch/oknjav001/bal_mzML_raw_files"
