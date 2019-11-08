@@ -7,11 +7,11 @@
 #SBATCH --mail-user=oknjav001@myuct.ac.za
 #SBATCH --mail-type=END,FAIL
 
-fragger=/scratch/oknjav001/proteomics/MSFragger-2.1/MSFragger-2.1.jar
+fragger=/scratch/oknjav001/proteomics/MSFragger-2.1/MSFragger-2.1.jar ##path to the jar file
 
-params=/scratch/oknjav001/proteomics/MSFragger-2.1/open_fragger.params
+params=/scratch/oknjav001/proteomics/MSFragger-2.1/open_fragger.params ## path to the parameter file
 
-raw_file=/scratch/oknjav001/bal_mzML_raw_files/*.mzML
+raw_file=/scratch/oknjav001/bal_mzML_raw_files/*.mzML ## path to the raw files
 
 
 java -Xmx32g -jar ${fragger} ${params} ${raw_file}
