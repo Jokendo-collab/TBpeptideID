@@ -20,5 +20,5 @@ $philosopherPath workspace --init
 #run the pipeline on the data
 $philosopherPath pipeline --config $config ltbi prevtb rectb
 
-#Remove the created workspace after the analysis is done
+#Remove the created workspace after the analysis is done.
 $philosopherPath workspace --clean
